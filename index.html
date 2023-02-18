@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users table</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            
+        <span class="close">&times;</span>
+        <h2></h2>
+                <form onsubmit="onFormSubmit()">    
+                    <div class="popup-form-div">
+                        <div class="popup-input-label-div">
+                            <label for="name">Name: </label>
+                            <input class="popup-input" type="text" placeholder="Elon Musk" name="name" id="name">
+                        </div>
+                        <div class="popup-input-label-div">
+                            <label for="username">Username: </label>
+                            <input class="popup-input" type="text" placeholder="elonmusk" name="username" id="username">
+                        </div>
+                        <div class="popup-input-label-div">
+                            <label for="email">Email: </label>
+                            <input class="popup-input" type="text" placeholder="elonmusk@gmail.com" name="email" id="email">
+                        </div>
+                        <div class="popup-input-label-div">
+                            <label for="Street">Name: </label>
+                            <input class="popup-input" type="text" placeholder="1355 Market Street" name="street" id="street">
+                        </div>
+                        <div class="popup-input-label-div">
+                            <label for="phone">Phone: </label>
+                            <input class="popup-input" type="text" placeholder="+372 77777777" name="phone" id="phone">
+                        </div>
+                        <div class="popup-input-label-div">
+                            <label for="website">Website: </label>
+                            <input class="popup-input" type="text" placeholder="https://twitter.com/home?lang=eng" name="website" id="website">
+                        </div>
+                        <div class="popup-input-label-div">
+                            <label for="companyName">Company name: </label>
+                            <input class="popup-input" type="text" placeholder="Twitter" name="companyName" id="companyName">
+                        </div>            
+                        <input class="popup-submit-button" type="submit" value="Submit">
+                    </div>
+                </form>
+        </div>
+    </div>
+    <div class="input-search-div">
+        <input type="search" id="search-input" class="search-input" placeholder="Search by user's name">
+        <button id="add-button" class="add-button">Add new user</button>
+    </div>
+    <div class="table-div">
+        <table id="main-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Street</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                    <th>Company name</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
